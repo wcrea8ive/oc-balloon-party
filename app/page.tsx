@@ -21,10 +21,7 @@ export default function Home() {
         <div className="pointer-events-none absolute inset-x-0 top-0 h-48 bg-gradient-to-b from-ink/85 via-ink/45 to-transparent" />
         <nav className="relative mx-auto flex max-w-7xl items-center justify-between px-6 py-6">
           <a href="#" className="shrink-0">
-            {/* Drop logo-white.png into /public to enable the image logo */}
-            <span className="font-display text-2xl font-bold italic text-ink-foreground">
-              OC Balloon Party
-            </span>
+            <Image src="/logo-white.png" alt="OC Balloon Party" width={280} height={254} className="h-40 w-auto" />
           </a>
           <div className="hidden gap-9 text-[20px] leading-none font-medium text-ink-foreground/90 md:flex">
             <a href="#services" className="transition hover:text-accent">Services</a>
@@ -149,10 +146,7 @@ export default function Home() {
 
       {/* ── Footer ── */}
       <footer className="bg-ink px-6 py-12 text-center">
-        {/* Drop logo-white.png into /public to show the image logo here */}
-        <span className="font-display text-3xl font-bold italic text-ink-foreground">
-          OC Balloon Party
-        </span>
+        <Image src="/logo-white.png" alt="OC Balloon Party" width={420} height={380} loading="lazy" className="mx-auto h-28 w-auto" />
         <p className="mt-6 text-sm text-primary-foreground/70">
           © {new Date().getFullYear()} OC Balloon Party · Serving Orange County &amp; Los Angeles
         </p>
